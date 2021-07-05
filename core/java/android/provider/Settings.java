@@ -5856,8 +5856,20 @@ public final class Settings {
         public static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
 
         /**
+         * Whether the HighTouchPollingRate is activated or not.
+         * 0 = off, 1 = on
+         * @hide
+         */
+        public static final String HIGH_TOUCH_POLLING_RATE_ENABLE =
+                "high_touch_polling_rate_enable";
+
+        /**
          * Whether to disable the ripple animation on fingerprint unlock
          * @hide
+         * IMPORTANT: If you add a new public settings you also have to add it to
+         * PUBLIC_SETTINGS below. If the new setting is hidden you have to add
+         * it to PRIVATE_SETTINGS below. Also add a validator that can validate
+         * the setting value. See an example above.
          */
         public static final String DISABLE_RIPPLE_EFFECT = "disable_ripple_effect";
 
@@ -7176,6 +7188,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(BATTERY_LIGHT_FULL_COLOR);
             PRIVATE_SETTINGS.add(BATTERY_LIGHT_REALLYFULL_COLOR);
             PRIVATE_SETTINGS.add(NAVIGATION_BAR_IME_SPACE);
+            PRIVATE_SETTINGS.add(HIGH_TOUCH_POLLING_RATE_ENABLE);
         }
 
         /**
