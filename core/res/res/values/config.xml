@@ -2673,7 +2673,7 @@
     <item name="config_ambiguousGestureMultiplier" format="float" type="dimen">2.0</item>
 
     <!-- Minimum velocity to initiate a fling, as measured in dips per second. -->
-    <dimen name="config_viewMinFlingVelocity">70dp</dimen>
+    <dimen name="config_viewMinFlingVelocity">50dp</dimen>
 
     <!-- Maximum velocity to initiate a fling, as measured in dips per second. -->
     <dimen name="config_viewMaxFlingVelocity">8000dp</dimen>
